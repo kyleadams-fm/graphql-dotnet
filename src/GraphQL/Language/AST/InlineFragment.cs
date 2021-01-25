@@ -8,6 +8,9 @@ namespace GraphQL.Language.AST
     /// </summary>
     public class InlineFragment : AbstractNode, IFragment, IHaveSelectionSet
     {
+        /// <inheritdoc/>
+        public override CommentNode CommentNode { get; set; }
+
         /// <summary>
         /// Gets or sets the named type node of this fragment.
         /// </summary>

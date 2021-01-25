@@ -16,7 +16,7 @@ namespace GraphQL.Language.AST
         /// <summary>
         /// Returns the comment node associated with the node.
         /// </summary>
-        public CommentNode CommentNode { get; set; }
+        public virtual CommentNode CommentNode { get => null; set => throw new NotSupportedException(); }
 
         /// <inheritdoc/>
         public SourceLocation SourceLocation { get; set; }

@@ -17,6 +17,9 @@ namespace GraphQL.Language.AST
             OperationType = OperationType.Query;
         }
 
+        /// <inheritdoc/>
+        public override CommentNode CommentNode { get; set; }
+
         /// <summary>
         /// Returns the name of the operation, if any.
         /// </summary>

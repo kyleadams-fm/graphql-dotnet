@@ -23,6 +23,9 @@ namespace GraphQL.Language.AST
             NameNode = name;
         }
 
+        /// <inheritdoc/>
+        public override CommentNode CommentNode { get; set; }
+
         /// <summary>
         /// Returns the name of this argument.
         /// </summary>

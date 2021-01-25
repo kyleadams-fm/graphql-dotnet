@@ -1094,8 +1094,8 @@ namespace GraphQL.Language.AST
         protected AbstractNode() { }
         public virtual System.Collections.Generic.IEnumerable<GraphQL.Language.AST.INode> Children { get; }
         public string Comment { get; }
-        public GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public GraphQL.Language.AST.SourceLocation SourceLocation { get; set; }
+        public virtual GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public virtual void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
     public class Argument : GraphQL.Language.AST.AbstractNode
@@ -1106,6 +1106,7 @@ namespace GraphQL.Language.AST
         public string Name { get; }
         public GraphQL.Language.AST.NameNode NameNode { get; }
         public GraphQL.Language.AST.IValue Value { get; set; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
@@ -1206,6 +1207,7 @@ namespace GraphQL.Language.AST
         public string Name { get; }
         public GraphQL.Language.AST.NameNode NameNode { get; }
         public GraphQL.Language.AST.SelectionSet SelectionSet { get; set; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
@@ -1229,6 +1231,7 @@ namespace GraphQL.Language.AST
         public GraphQL.Language.AST.NameNode NameNode { get; }
         public GraphQL.Language.AST.SelectionSet SelectionSet { get; set; }
         public GraphQL.Language.AST.NamedType Type { get; set; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
@@ -1239,6 +1242,7 @@ namespace GraphQL.Language.AST
         public GraphQL.Language.AST.Directives Directives { get; set; }
         public string Name { get; }
         public GraphQL.Language.AST.NameNode NameNode { get; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
@@ -1283,6 +1287,7 @@ namespace GraphQL.Language.AST
         public GraphQL.Language.AST.Directives Directives { get; set; }
         public GraphQL.Language.AST.SelectionSet SelectionSet { get; set; }
         public GraphQL.Language.AST.NamedType Type { get; set; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
@@ -1373,6 +1378,7 @@ namespace GraphQL.Language.AST
         public GraphQL.Language.AST.OperationType OperationType { get; set; }
         public GraphQL.Language.AST.SelectionSet SelectionSet { get; set; }
         public GraphQL.Language.AST.VariableDefinitions Variables { get; set; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
@@ -1466,6 +1472,7 @@ namespace GraphQL.Language.AST
         public string Name { get; }
         public GraphQL.Language.AST.NameNode NameNode { get; set; }
         public GraphQL.Language.AST.IType Type { get; set; }
+        public override GraphQL.Language.AST.CommentNode CommentNode { get; set; }
         public override string ToString() { }
         public override void Visit<TState>(System.Action<GraphQL.Language.AST.INode, TState> action, TState state) { }
     }
