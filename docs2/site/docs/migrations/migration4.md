@@ -530,6 +530,7 @@ default continues to be `ResolverType.Resolver`.
 * `ValidationContext.Print(INode node)` and `ValidationContext.Print(IGraphType type)` methods have been removed
 * `Directives.HasDuplicates` property has been removed
 * `KnownDirectives` validation rule has been renamed to `KnownDirectivesInAllowedLocations` and now also generates `5.7.2` validation error number
+* `TypeExtensions.IsPrimitive` has been removed
 
 ### Other Breaking Changes (including but not limited to)
 

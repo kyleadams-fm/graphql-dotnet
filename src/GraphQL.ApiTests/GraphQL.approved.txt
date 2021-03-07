@@ -400,7 +400,6 @@ namespace GraphQL
         public static bool IsConcrete(this System.Type type) { }
         public static bool IsGraphType(this System.Type type) { }
         public static bool IsNullable(this System.Type type) { }
-        public static bool IsPrimitive(this System.Type type) { }
         public static string ObsoleteMessage(this System.Reflection.MemberInfo memberInfo) { }
     }
     public enum TypeMappingMode
