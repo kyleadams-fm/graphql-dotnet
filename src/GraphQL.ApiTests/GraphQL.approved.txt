@@ -1590,7 +1590,6 @@ namespace GraphQL.Types
     public static class AbstractGraphTypeExtensions
     {
         public static GraphQL.Types.IObjectGraphType GetObjectType(this GraphQL.Types.IAbstractGraphType abstractType, object value, GraphQL.Types.ISchema schema) { }
-        public static GraphQL.Types.IObjectGraphType GetTypeOf(this GraphQL.Types.IAbstractGraphType abstractType, object value) { }
         public static bool IsPossibleType(this GraphQL.Types.IAbstractGraphType abstractType, GraphQL.Types.IGraphType type) { }
     }
     public class AppliedDirective : System.Collections.Generic.IEnumerable<GraphQL.Types.DirectiveArgument>, System.Collections.IEnumerable
